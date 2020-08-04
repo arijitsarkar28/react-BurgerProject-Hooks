@@ -22,6 +22,11 @@ export const purchaseBurgerStart = () => {
     }
 }
 
+/**
+ * make a new purchase update the error table
+ * @param  orderData 
+ * @param  token 
+ */
 export const purchaseBurger = (orderData, token) => {
     return (dispatch) => {
         dispatch(purchaseBurgerStart());
@@ -61,6 +66,11 @@ export const fetchOrdersStart = () => {
     }
 }
 
+/**
+ * Fetch all orders of the user based on authentication token
+ * @param token 
+ * @param userId 
+ */
 export const fetchOrders = (token , userId) => {
     return (dispatch) => {
         dispatch(fetchOrdersStart());

@@ -38,7 +38,12 @@ export const checkAuthTimeout = (expiresIn) => {
         },expiresIn * 1000)
     }
 }
-
+/**
+ * Login/Signup actions
+ * @param  email 
+ * @param  password 
+ * @param  isSignup 
+ */
 export const auth = (email, password, isSignup) => {
     return (dispatch) => {
         dispatch(authStart());
